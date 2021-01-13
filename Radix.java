@@ -17,14 +17,14 @@ public class Radix{
         return ((int)Math.log10(n) + 1);        
     }
 
-    public static void merge(MyLinkedList original,MyLinkedList[]buckets){
-        for (MyLinkedList i : buckets){
-            if (i.size() > 0){
-                original.extend(i); 
-            }
+    // public static void merge(MyLinkedList original,MyLinkedList[]buckets){
+    //     for (MyLinkedList i : buckets){
+    //         if (i.size() > 0){
+    //             original.extend(i); 
+    //         }
             
-        } 
-    }
+    //     } 
+    // }
     public static void merge(SortableLinkedList original,SortableLinkedList[]buckets){
         for (SortableLinkedList i : buckets){
             if (i.size() > 0){
